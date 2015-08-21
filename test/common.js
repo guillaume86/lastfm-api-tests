@@ -4,9 +4,8 @@ import qs from 'qs';
 
 const DEBUG = false;
 const baseUrl = 'http://ws.audioscrobbler.com/2.0/';
-const apiKey = '3b954460f7b207e5414ffdf8c5710592';
-
-export const user = 'gui_lec';
+const apiKey = 'FILL-THIS';
+export const user = 'FILL-THIS';
 
 function url(method, params = {}) {
   const queryString = qs.stringify({
