@@ -1,0 +1,21 @@
+{
+  "name": "lastfm-api-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha || true",
+    "watch": "./node_modules/.bin/mocha --watch",
+    "test-report": "./node_modules/.bin/mocha --reporter markdown > report.md || true"
+  },
+  "author": "Guillaume Lecomte <guillaume86@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "chai": "^3.2.0",
+    "eslint": "^1.2.1",
+    "isomorphic-fetch": "^2.1.1",
+    "mocha": "^2.2.5",
+    "qs": "^4.0.0"
+  }
+}

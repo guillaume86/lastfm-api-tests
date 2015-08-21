@@ -1,0 +1,166 @@
+
+> lastfm-api-tests@1.0.0 test c:\Users\guill_000\Dropbox\code\lastfm-api-tests
+> mocha || true
+
+
+
+  Album
+    getInfo
+      √ should return a valid response when requesting by artist/album (350ms)
+    getShouts
+      1) should return a valid response when requesting by artist/album
+    getTags
+      √ should return a valid response when requesting by artist/album/user (335ms)
+    getTopTags
+      √ should return a valid response when requesting by artist/album (334ms)
+    search
+      √ should return a valid response when requesting by album (498ms)
+
+  Artist
+    getInfo
+      √ should return a valid response when requesting by artist (384ms)
+    getShouts
+      2) should return a valid response when requesting by artist
+    getSimilar
+      √ should return a valid response when requesting by artist (838ms)
+    getTags
+      √ should return a valid response when requesting by artist/user (330ms)
+    getTopAlbums
+      3) should return a valid response when requesting by artist
+    getTopFans
+      4) should return a valid response when requesting by artist
+    getTopTags
+      √ should return a valid response when requesting by artist (335ms)
+    getTopTracks
+      √ should return a valid response when requesting by artist (683ms)
+    search
+      √ should return a valid response when requesting by artist (512ms)
+
+  Chart
+    getHypedArtists
+      5) should return a valid response
+    getHypedTracks
+      6) should return a valid response
+    getLovedTracks
+      7) should return a valid response
+    getTopArtists
+      √ should return a valid response (950ms)
+    getTopTags
+      √ should return a valid response (345ms)
+    getTopTracks
+      √ should return a valid response (763ms)
+
+  Tag
+    getInfo
+      8) should return a valid response when requesting by tag
+    getSimilar
+      9) should return a valid response when requesting by tag
+    getTopAlbums
+      √ should return a valid response when requesting by tag (688ms)
+    getTopArtists
+      √ should return a valid response when requesting by tag (748ms)
+    getTopTags
+      10) should return a valid response when requesting by tag
+    getTopTracks
+      11) should return a valid response when requesting by tag
+    search
+      12) should return a valid response when requesting by tag
+
+  Track
+    getInfo
+      √ should return a valid response when requesting by track (355ms)
+    getShouts
+      13) should return a valid response when requesting by track
+    getSimilar
+      14) should return a valid response when requesting by track
+    getTags
+      √ should return a valid response when requesting by track/user (331ms)
+    getTopFans
+      15) should return a valid response when requesting by track
+    getTopTags
+      √ should return a valid response when requesting by track (334ms)
+    search
+      √ should return a valid response when requesting by track (507ms)
+
+
+  19 passing (1m)
+  15 failing
+
+  1) Album getShouts should return a valid response when requesting by artist/album:
+     Error: {"error":3,"message":"Invalid Method - No method with that name in this package"}
+      at checkError (c:/Users/guill_000/Dropbox/code/lastfm-api-tests/test/common.js:30:11)
+
+  2) Artist getShouts should return a valid response when requesting by artist:
+     Error: {"error":3,"message":"Invalid Method - No method with that name in this package"}
+      at checkError (c:/Users/guill_000/Dropbox/code/lastfm-api-tests/test/common.js:30:11)
+
+  3) Artist getTopAlbums should return a valid response when requesting by artist:
+     Error: {"error":3,"message":"Invalid Method - No method with that name in this package"}
+      at checkError (c:/Users/guill_000/Dropbox/code/lastfm-api-tests/test/common.js:30:11)
+
+  4) Artist getTopFans should return a valid response when requesting by artist:
+     Error: {"error":3,"message":"Invalid Method - No method with that name in this package"}
+      at checkError (c:/Users/guill_000/Dropbox/code/lastfm-api-tests/test/common.js:30:11)
+
+  5) Chart getHypedArtists should return a valid response:
+     Error: {"error":3,"message":"Invalid Method - No method with that name in this package"}
+      at checkError (c:/Users/guill_000/Dropbox/code/lastfm-api-tests/test/common.js:30:11)
+
+  6) Chart getHypedTracks should return a valid response:
+     Error: {"error":3,"message":"Invalid Method - No method with that name in this package"}
+      at checkError (c:/Users/guill_000/Dropbox/code/lastfm-api-tests/test/common.js:30:11)
+
+  7) Chart getLovedTracks should return a valid response:
+     Error: {"error":3,"message":"Invalid Method - No method with that name in this package"}
+      at checkError (c:/Users/guill_000/Dropbox/code/lastfm-api-tests/test/common.js:30:11)
+
+  8) Tag getInfo should return a valid response when requesting by tag:
+     Error: {"error":3,"message":"Invalid Method - No method with that name in this package"}
+      at checkError (c:/Users/guill_000/Dropbox/code/lastfm-api-tests/test/common.js:30:11)
+
+  9) Tag getSimilar should return a valid response when requesting by tag:
+     Error: {"error":3,"message":"Invalid Method - No method with that name in this package"}
+      at checkError (c:/Users/guill_000/Dropbox/code/lastfm-api-tests/test/common.js:30:11)
+
+  10) Tag getTopTags should return a valid response when requesting by tag:
+
+      AssertionError: expected {} to contain key 'toptags'
+      + expected - actual
+
+      -[]
+      +[
+      +  "toptags"
+      +]
+      
+      at c:/Users/guill_000/Dropbox/code/lastfm-api-tests/test/tag.js:59:37
+
+  11) Tag getTopTracks should return a valid response when requesting by tag:
+
+      AssertionError: expected { Object (tracks) } to contain key 'toptracks'
+      + expected - actual
+
+       [
+      -  "tracks"
+      +  "toptracks"
+       ]
+      
+      at c:/Users/guill_000/Dropbox/code/lastfm-api-tests/test/tag.js:69:37
+
+  12) Tag search should return a valid response when requesting by tag:
+     Error: {"error":3,"message":"Invalid Method - No method with that name in this package"}
+      at checkError (c:/Users/guill_000/Dropbox/code/lastfm-api-tests/test/common.js:30:11)
+
+  13) Track getShouts should return a valid response when requesting by track:
+     Error: {"error":3,"message":"Invalid Method - No method with that name in this package"}
+      at checkError (c:/Users/guill_000/Dropbox/code/lastfm-api-tests/test/common.js:30:11)
+
+  14) Track getSimilar should return a valid response when requesting by track:
+     Error: {"error":3,"message":"Invalid Method - No method with that name in this package"}
+      at checkError (c:/Users/guill_000/Dropbox/code/lastfm-api-tests/test/common.js:30:11)
+
+  15) Track getTopFans should return a valid response when requesting by track:
+     Error: {"error":3,"message":"Invalid Method - No method with that name in this package"}
+      at checkError (c:/Users/guill_000/Dropbox/code/lastfm-api-tests/test/common.js:30:11)
+
+
+
